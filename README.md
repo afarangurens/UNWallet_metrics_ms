@@ -56,9 +56,13 @@ Main functions that this service manage:
 
         docker build -t unwallet_metrics_ms . 
  
-4. Lastly you'll need to run the container image you just created through port 80:80 and linking it to the existing mongodb container:
+4. We need to see the CONTAINER ID of our mongodb container, so we'll use the following command to see all the running containers:
 
-        docker run --name unwallet_metrics_ms --link d519105c7181:mongo -p 80:80 unwallet_metrics_ms
+        docker ps
+        
+5. Lastly you'll need to run the container image you just created through port 80:80 and linking it to the existing mongodb container using the container_id you just found:
+
+        docker run --name unwallet_metrics_ms --link CONTAINER _ID:mongo -p 80:80 unwallet_metrics_ms
 
 
 # Accesing the Service
