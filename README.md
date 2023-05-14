@@ -26,22 +26,6 @@ Main functions that this service manage:
          
         .venv\Scripts\Activate
     
-3. Then you'll need to install the requirements freezed in the requirements.txt file using:
-
-
-        pip install requirements.txt
-
-
-5. Se debe correr los siguientes comandos para crear la tabla de la clase CsvFile
-
-        python manage.py makemigrations
-        python manage.py migrate
-
-
-7. Por último para correr la aplicación se debe utilizar el comando:
-
-        python manage.py runserver
-
 # Deployment Instructions
 
 1. This microservice consist in a tuple of a mongodb docker and a FastAPI docker, you will need to create the mongodb container first, for this pull the official mongo image from docker using:
