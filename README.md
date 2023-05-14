@@ -19,13 +19,6 @@ Main functions that this service manage:
         git clone https://github.com/afarangurens/UNWallet_metrics_ms.git
         cd UNWallet_metrics_ms
 
-2. Since this is a python app, it's best if you create an environment in order to install the requirements for this app just for this project, for this you'll need to use:
-
-        python -m venv .venv
-    And you can activate this environment using (windows):
-         
-        .venv\Scripts\Activate
-    
 # Deployment Instructions
 
 1. This microservice consist in a tuple of a mongodb docker and a FastAPI docker, you will need to create the mongodb container first, for this pull the official mongo image from docker using:
